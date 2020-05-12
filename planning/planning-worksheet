@@ -6,7 +6,7 @@
 |Day 1| Project Worsheet & Django Authentication | Complete
 |Day 2|	Django Api and Deployemnt | Complete
 |Day 3| React Header, LogIn, SignUp, and Home | Complete
-|Day 4| React Clothing List, Full Details, Shopping Cart| Incomplete
+|Day 4| React Clothing List, Full Details, Shopping Cart| Complete
 |Day 5| React Shopping Cart, Confirmation Page, and My Orders| Incomplete
 |Day 6| React Profile, Search Bar, and Touch Ups | Incomplete
 |Day 7| Present | Incomplete
@@ -76,10 +76,10 @@ MVP List:
 - [x] Home Page
 - [x] Clothing List
 - [x] Full Detail Page
-- [ ] Shopping Cart
+- [x] Shopping Cart
 - [ ] Checkout Item
 - [ ] Confirmation Page
-- [ ] My Orders
+- [x] My Orders
 
 
 
@@ -113,10 +113,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Home Page | H | 2hr | 2hr | hr|
 | Clothing List | H | 4hr | 2hr | hr|
 | Full Detail Page | H | 4hr | 3hr | hr|
-| Shopping Cart | H | 4hr | hr | hr|
-| Checkout Item | H | 1hr | hr | hr|
+| Shopping Cart | H | 4hr | 6hr | hr|
+| Checkout Item | H | 1hr | 1hr | hr|
 | Confirmation Page | H | 1hr | hr | hr|
-| My Orders | H | 4hr | hr | hr|
+| My Orders | H | 4hr | 3hr | hr|
 | Profile | L | 1hr | hr | hr|
 | Search bar | L | 4hr | 2hr | hr|
 | Extra CSS | L | 5hr | hr | hr|
