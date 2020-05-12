@@ -31,6 +31,7 @@ class Order(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     items = models.ManyToManyField(CartItem)
     created_at = models.DateTimeField(auto_now_add=True)
+    total = models.IntegerField()
 
 
     class Meta:

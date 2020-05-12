@@ -11,14 +11,14 @@ class CartItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CartItem
-        fields = ('id', 'owner', 'product', 'qty', 'size',)
+        fields = ('id', 'owner', 'product', 'qty', 'size', 'ordered',)
 
 class CartFullSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.email')
 
     class Meta:
         model = CartItem
-        fields = ('id', 'owner', 'product', 'qty', 'size',)
+        fields = ('id', 'owner', 'product', 'qty', 'size', 'ordered',)
         depth = 1
 
 class OrderSerializer(serializers.ModelSerializer):
@@ -26,7 +26,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ('id', 'owner', 'items', 'created_at', 'ordered',)
+        fields = ('id', 'owner', 'items', 'created_at', 'total',)
 
 class OrderFullSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.email')
@@ -34,5 +34,5 @@ class OrderFullSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ('id', 'owner', 'items', 'created_at', 'ordered',)
+        fields = ('id', 'owner', 'items', 'created_at', 'total',)
 

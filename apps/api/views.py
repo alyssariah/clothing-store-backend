@@ -100,6 +100,6 @@ class OrderExpandedViewSet(generics.ListAPIView):
 class SearchDatabase(generics.ListAPIView):
     def get_queryset(self):
         search_term = self.request.GET.get('q',)
-        queryset = Product.objects.annotate(search=SearchVector('name', 'category'),).filter(search=search_term)
+        queryset = Product.objects.annotate(search=SearchVector('name', 'category',),).filter(search=search_term)
         return queryset
     serializer_class = ProductSerializer
