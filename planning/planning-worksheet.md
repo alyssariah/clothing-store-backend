@@ -4,7 +4,7 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Worsheet & Django Authentication | Complete
-|Day 2|	Django Api and Deployemnt | Complete
+|Day 2|	Django Api and Deployment | Complete
 |Day 3| React Header, LogIn, SignUp, and Home | Complete
 |Day 4| React Clothing List, Full Details, Shopping Cart| Complete
 |Day 5| React Shopping Cart, Confirmation Page, and My Orders| Complete
@@ -24,7 +24,7 @@ https://www.nike.com/w/womens-pants-tights-2kq19z5e1x6
 ## Project Links
 frontend: https://github.com/alyssariah/clothing-store-frontend/
 
-backend:
+backend: https://github.com/alyssariah/clothing-store-backend/
 
 ## Wireframes
 
@@ -88,7 +88,8 @@ PostMVP List:
 - [x] Profile
 - [x] Search bar
 - [x] Hover effect over items
-- [ ] Responsive?
+- [ ] Responsive
+- [ ] PayPal
 
 
 
@@ -118,24 +119,37 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Confirmation Page | H | 1hr | 1hr | hr|
 | My Orders | H | 4hr | 3hr | hr|
 | Profile | L | 1hr | 2hr | hr|
-| Bugs | H | 4hr | 2hr | hr|
+| Bugs | H | 4hr | 1hr | hr|
 | Search bar | L | 4hr | 2hr | hr|
 | Extra CSS | L | 5hr | 4hr | hr|
 | Hover effect | L | 1hr | 1hr | hr|
-| Seeding more Clothes | L | 2hr | 1hr | hr|
-| PayPal | L | 6hr | 1hr | hr|
-| Total |  | 50hrs| -hrs | -hrs |
+| PayPal | L | 6hr | 2hr | hr|
+| Responsive | L | 3hr | -hr | hr|
+| Total |  | 50hrs| 56.5hrs | 56.5hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and their role in the project.
-
+    MDBootstrap
+    
 
 ## Code Snippet
-
+Table used in the shopping cart
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+           {
+            'img': <img src={item.product.pictureUrl} alt="" className="img-fluid z-depth-0" style={{height: '80px', width: '100px'}}/>,
+            'product': [<h5 className="mt-3" key={new Date().getDate + 1}><strong>{item.product.name}</strong></h5>, <p key={new
+              Date().getDate} className="text-muted"></p>],
+            'size': <h5 className="mt-3" >{item.product.category === 'Dresses' || item.product.category === 'Tops' || item.product.category === 'Sale'? item.size: '--'}</h5>,
+            'price': <h5 className="mt-3" >${item.product.price * item.qty}.00</h5>,
+            'qty': <h5 className="mt-3" ><input style={{width: '2.5vw', textAlign: 'center'}}class="quantity" value={item.qty}  min='1' onChange={handleQty} type="number"/></h5>,
+            'button':
+            <MDBTooltip placement="top">
+                <MDBBtn className='mt-3' color="white" size="sm" onClick={()=>{removeItem(item.id)}}>
+                    X
+                </MDBBtn>
+                <div>Remove item</div>
+            </MDBTooltip> 
+          }
+
 ```
 
 ## Issues and Resolutions
