@@ -7,8 +7,8 @@
 |Day 2|	Django Api and Deployemnt | Complete
 |Day 3| React Header, LogIn, SignUp, and Home | Complete
 |Day 4| React Clothing List, Full Details, Shopping Cart| Complete
-|Day 5| React Shopping Cart, Confirmation Page, and My Orders| Incomplete
-|Day 6| React Profile, Search Bar, and Touch Ups | Incomplete
+|Day 5| React Shopping Cart, Confirmation Page, and My Orders| Complete
+|Day 6| React Profile, Search Bar, and Touch Ups | Complete
 |Day 7| Present | Incomplete
 
 
