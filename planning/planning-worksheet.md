@@ -124,8 +124,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Extra CSS | L | 5hr | 4hr | hr|
 | Hover effect | L | 1hr | 1hr | hr|
 | PayPal | L | 6hr | 2hr | hr|
-| Responsive | L | 3hr | -hr | hr|
-| Total |  | 50hrs| 56.5hrs | 56.5hrs |
+| Responsive | L | 3hr | 6hr | hr|
+| Total |  | 50hrs| 60hrs | 60hrs |
 
 ## Additional Libraries
     MDBootstrap
